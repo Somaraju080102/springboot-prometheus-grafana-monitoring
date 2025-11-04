@@ -16,26 +16,6 @@ It collects application metrics such as **CPU usage, memory, request counts, and
 ---
 
 ## 🏗️ Architecture Overview
-  +------------------------+
-| Spring Boot App |
-| (port: 8080) |
-| /actuator/prometheus |
-+-----------+------------+
-|
-| metrics scraped every 5s
-v
-+------------------------+
-| Prometheus (9090) |
-| - prometheus.yml |
-| - stores time-series |
-+-----------+------------+
-|
-| datasource connection
-v
-+------------------------+
-| Grafana (3000) |
-| - connected to Prom |
-| - dashboards & alerts|
-+------------------------+
 
+  <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/fc7bac5d-8a4e-41d4-abdc-74e05c5efaa5" />
 
